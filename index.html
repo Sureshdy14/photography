@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Photography</title>
+	<style>
+		body {
+			background-image:url(1.jpg);
+			background-repeat: no-repeat;
+            background-size: 100% 100%;
+			margin: 0;
+			font-family: Arial, sans-serif;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+
+		header {
+			
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			
+		}
+
+		.logo img {
+			max-width: 100px;
+		}
+
+		.topnav-right {
+
+			display: flex;
+			align-items: center;
+		}
+
+		.topnav-right a {
+			color: white;
+			text-decoration: none;
+			padding: 10px;
+		}
+
+		/* Change the color of links on hover */
+		.topnav-right a:hover {
+			background-color: #ddd;
+			
+		}
+
+.image-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+</style>
+<style>
+/*gallery css*/
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="camera.jpg" alt="logo">
+		</div>
+		<div class="topnav-right">
+			<a href="index.html">Home</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="services.html">Services</a>
+			<a href="appointment.html">Appointment</a>
+			<a href="signin.html">Signin</a>
+		</div>
+	</header>
+	<div class="image-text">
+	<h1>Native Photography</h1>
+	<h2>We make good memories</h2>
+	<p>Start collect the memories ti make happy and enjoy your every moment in your life.</p>
+</div>
+</body>
+</html>
+
+

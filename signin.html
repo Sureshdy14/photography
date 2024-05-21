@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Sign In</title>
+  <style>
+    .bg-img {
+      /* The image used */
+      background-image: url("5.jpg");
+      min-height: 380px;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .container-mt-5 {
+      width: 100px;
+      height: 350px;
+    }
+  </style>
+</head>
+<body class="bg-img">
+
+<div class="overlay" id="formOverlay">
+  <div class="popup">
+    <span class="close-btn" onclick="closeForm()">Close</span>
+
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="5.jpg" class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-9">
+              <form action="" method="">
+                <div class="login" style="text-align: center; font-size:25px">LOGIN</div>
+                <div class="form-group">
+                  <div class="col-xs-4">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control form-control-sm" id="email"  name="email" placeholder="Enter your email" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-4">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control form-control-sm" id="pass" name="password" placeholder="Enter your password" required>
+                  </div>
+                </div>
+                <div class="ab" style="text-align: right;">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                  <p>If not registered? <a href="signup.html">Signup</a></p>
+                  <p><a href="">Forgot Password</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Your existing scripts -->
+<script>
+  function openForm() {
+    document.getElementById("formOverlay").style.display = "flex";
+  }
+
+  function closeForm() {
+    document.getElementById("formOverlay").style.display = "none";
+  }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

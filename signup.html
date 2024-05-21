@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Card with Form</title>
+</head>
+<style>
+  .bg-img {
+      /* The image used */
+      background-image: url("5.jpg");
+      min-height: 380px;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+</style>
+<body  class="bg-img">
+
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <!-- Image at the top left -->
+        <div class="col-md-3">
+          <img src="5.jpg" class="img-fluid" alt="Image">
+        </div>
+
+        <!-- Form content at the top right -->
+        <div class="col-md-9">
+          <form action="" method="">
+            <div class="login" style="text-align: center; font-size:25px">LOGIN</div>
+        <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="name" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" id="pass" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+              <label for="repassword">re-Password:</label>
+              <input type="password" class="form-control" id="repass" name="rePassword" placeholder="Enter your repassword" required>
+            </div>
+           
+            <!-- Add more form fields as needed -->
+             <div class="ab" style="text-align: right;">
+            <button type="submit" class="btn btn-primary">Signup</button>
+            <p><a href="">Forget Password</a></p>   
+             </div>
+             </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
